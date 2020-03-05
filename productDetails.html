@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Store Site</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- javascript -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>
+                <img src="paws.png" alt="paw prints" height="40" width="40">
+                <a href="home.html">     Muddy Paws Adventure Gear</a>
+            </h1>
+            
+            <a href="cart.html">
+            <img src="cart.png" alt="shopping cart" height="40" width="40" class="right">
+            <a id="itemQuantity" class=rightCart></a>
+            </a>
+
+            &nbsp;
+            <nav>
+                <a href="aboutUs.html">About Us</a> -
+                <a href="products.html">Products</a> -
+                <a>Blog</a> -
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <div id="todo-lists">
+            <div class="list">
+                <img id="backpack" src="catBackpack.png" alt="cat backpack" height="300" width="300" class="rightBox">
+
+                <h2 class="list-title">Cat Backpack</h2><br>
+                
+                <a>Price: $25</a><br><br>
+                
+                <a>Clear bubble backpack with air holes</a><br><br>
+                
+                <a>Colors: </a><br>
+                <button onclick="changeStrawberry()">Strawberry</button>
+                <button onclick="changeBlackberry()">Blackberry</button>
+                <button>Crazyberry</button>
+                <button>Fire Orange</button><br><br>
+                
+                <a>Sizes:</a><br>
+                <button>Tiny</button>
+                <button>Small</button>
+                <button>Medium</button>
+                <button>Large</button><br><br>
+                
+                <a>Quantity: 
+                    <select id="quantity">
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                    </select>
+                </a><br><br>
+                
+                <button onclick="addItem()" id="addToCart">Add to Cart
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <script src="productAndCart.js"></script>
+</body>
+
+</html>
