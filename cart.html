@@ -4,9 +4,9 @@
     <title>Pet Store Site</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- fonts -->
+    <!-- fonts 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- javascript -->
+     javascript -->
     <script src="main.js"></script>
 </head>
 
@@ -20,6 +20,7 @@
             
             <a href="cart.html">
             <img src="cart.png" alt="shopping cart" height="40" width="40" class="right">
+            <a id="itemQuantity" class=rightCart></a>
             </a>
 
             &nbsp;
@@ -35,25 +36,29 @@
             <div class="list">
                 <h2 class="list-title">Shopping Cart</h2><br>
                 
-                <a>Cat Backpack</a><br>
-                <img src="catBackpack.png" alt="cat backpack" height="100" width="100" class="cartImage">
+                <div id="displayBackpack" class="displayBackpack">
+                	<a>Cat Backpack</a><br>
+                	<img id="displayBackpack" src="catBackpack.png" alt="cat backpack" height="100" width="100" class="cartImage">
                 
-                <a>Color: </a>
-                <button>Strawberry</button>
-                <br>
+                	<a>Color: </a>
+                	<button>Strawberry</button>
+                	<br>
                 
-                <a>Size:</a>
-                <button>Tiny</button>
-                <br>
+               		<a>Size:</a>
+                	<button>Tiny</button>
+                	<br>
                 
-                <a>Quantity: 1</a><br>
-                <a>Price: $25</a><br>
+                	<a>Quantity: 1</a><br>
+                	<a>Price: $25</a><br>
 
-                <button>Check Out</button>
+                	<button>Check Out</button>
+            	</div>
 
+                <button onclick="remove()" class="rightRemove">Remove</button>
             </div>
         </div>
     </div>
+    <script src="productAndCart.js"></script>
 </body>
 
 </html>

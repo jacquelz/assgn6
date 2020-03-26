@@ -119,3 +119,25 @@ input {
     right:35px;
     padding:10px;
 }
+
+.rightRemove{
+    position:absolute;
+    right:80px;
+    padding:10px;
+}
+
+.rightHeart{
+    position:absolute;
+    right:110px;
+}
+
+.rightWishlist{
+    position:absolute;
+    right:90px;
+    padding:10px;
+}
+
+.left{
+    position:absolute;
+    left:50px;
+}

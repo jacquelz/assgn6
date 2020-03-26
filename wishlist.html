@@ -20,6 +20,11 @@
             
             <a href="cart.html">
             <img src="cart.png" alt="shopping cart" height="40" width="40" class="right">
+            <a id="itemQuantity" class=rightCart></a>
+            </a>
+            
+            <a href="wishlist.html">
+            <img src="heart.jpg" alt="heart" height="40" width="40" class="rightHeart">
             </a>
 
             &nbsp;
@@ -31,15 +36,31 @@
             </nav>
         </header>
 
-        <h3>About Us</h3><br>
-
         <div id="todo-lists">
             <div class="list">
-                <a>Founded and trusted since 1999, Muddy Paws Adventure Gear has been committed to delivering high quality pet products worldwide. Our story started when founder and fellow adventurer Peter Xiao first adopted Taro, an energetic maltese. For weekend hiking trips, Peter created our bestselling, patent portable pet water bottle.</a>
+                <h2 class="list-title">Wishlist</h2><br>
+                
+                <div id="displayBackpack" class="displayBackpack">
+                	<a>Cat Harness</a><br>
+                	<img id="displayBackpack" src="catLeash.png" alt="cat harness" height="100" width="100" class="cartImage">
+                
+                	<a>Color: </a>
+                	<button>Blackberry</button>
+                	<br>
+                
+               		<a>Size:</a>
+                	<button>Small</button>
+                	<br>
+                
+                	<a>Quantity: 1</a><br>
+                	<a>Price: $15</a><br>
+
+                	<button>Add to Cart</button>
+            	</div>
+
+                <button onclick="remove()" class="rightRemove">Remove</button>
             </div>
         </div>
-
-        <img src="taro.jpg" alt="Taro dog" height="500" width="200" class="center"><br><br>
     </div>
 </body>
 

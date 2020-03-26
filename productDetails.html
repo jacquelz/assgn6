@@ -4,9 +4,9 @@
     <title>Pet Store Site</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- fonts -->
+    <!-- fonts 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- javascript -->
+     javascript -->
     <script src="main.js"></script>
 </head>
 
@@ -64,10 +64,18 @@
                     </select>
                 </a><br><br>
                 
-                <button onclick="addItem()" id="addToCart">Add to Cart
-                </button>
+                <button onclick="addItem()" id="addToCart">Add to Cart</button>
 
             </div>
+        </div>
+
+        <div id="carousel">
+            <h2 class="list-title">People Also Viewed</h2><br>
+            <img class="slides" src="catLeash.png" height="200" width="200">
+            <img class="slides" src="dogHarness.jpg" height="200" width="200">
+            <img class="slides" src="gpsTracker.jpg" height="200" width="200">
+            <button class="w3-button w3-display-left" onclick="plus(-1)">&#10094</button>
+            <button class="w3-button w3-display-right" onclick="plus(+1)">&#10095</button>
         </div>
     </div>
     <script src="productAndCart.js"></script>
